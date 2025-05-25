@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Health Assistant Chatbot</title>
+</head>
+<body>
+    <h1>AI-Powered Health Assistant</h1>
+    <form method="POST">
+        <label for="symptoms">Enter your symptoms (comma separated):</label><br/>
+        <input type="text" id="symptoms" name="symptoms" size="80" required/><br/><br/>
+        <input type="submit" value="Get Health Tips" />
+    </form>
+    <hr/>
+    <div>
+        {{ response|safe }}
+    </div>
+</body>
+</html>
